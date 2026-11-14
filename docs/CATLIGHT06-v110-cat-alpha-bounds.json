@@ -1,0 +1,260 @@
+{
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "runtime_atlas_dimensions": [
+    2304,
+    1536
+  ],
+  "native_source_cell": [
+    384,
+    256
+  ],
+  "runtime_cell": [
+    576,
+    384
+  ],
+  "frames": [
+    {
+      "frame": 0,
+      "visible_bounds_px": [
+        95,
+        104,
+        499,
+        311
+      ],
+      "clearance_px": [
+        95,
+        104,
+        76,
+        72
+      ]
+    },
+    {
+      "frame": 1,
+      "visible_bounds_px": [
+        95,
+        103,
+        484,
+        311
+      ],
+      "clearance_px": [
+        95,
+        103,
+        91,
+        72
+      ]
+    },
+    {
+      "frame": 2,
+      "visible_bounds_px": [
+        93,
+        103,
+        464,
+        311
+      ],
+      "clearance_px": [
+        93,
+        103,
+        111,
+        72
+      ]
+    },
+    {
+      "frame": 3,
+      "visible_bounds_px": [
+        88,
+        114,
+        440,
+        311
+      ],
+      "clearance_px": [
+        88,
+        114,
+        135,
+        72
+      ]
+    },
+    {
+      "frame": 4,
+      "visible_bounds_px": [
+        98,
+        107,
+        431,
+        307
+      ],
+      "clearance_px": [
+        98,
+        107,
+        144,
+        76
+      ]
+    },
+    {
+      "frame": 5,
+      "visible_bounds_px": [
+        98,
+        116,
+        440,
+        308
+      ],
+      "clearance_px": [
+        98,
+        116,
+        135,
+        75
+      ]
+    },
+    {
+      "frame": 6,
+      "visible_bounds_px": [
+        99,
+        103,
+        440,
+        318
+      ],
+      "clearance_px": [
+        99,
+        103,
+        135,
+        65
+      ]
+    },
+    {
+      "frame": 7,
+      "visible_bounds_px": [
+        102,
+        84,
+        432,
+        322
+      ],
+      "clearance_px": [
+        102,
+        84,
+        143,
+        61
+      ]
+    },
+    {
+      "frame": 8,
+      "visible_bounds_px": [
+        112,
+        71,
+        448,
+        330
+      ],
+      "clearance_px": [
+        112,
+        71,
+        127,
+        53
+      ]
+    },
+    {
+      "frame": 9,
+      "visible_bounds_px": [
+        101,
+        60,
+        441,
+        333
+      ],
+      "clearance_px": [
+        101,
+        60,
+        134,
+        50
+      ]
+    },
+    {
+      "frame": 10,
+      "visible_bounds_px": [
+        93,
+        43,
+        442,
+        334
+      ],
+      "clearance_px": [
+        93,
+        43,
+        133,
+        49
+      ]
+    },
+    {
+      "frame": 11,
+      "visible_bounds_px": [
+        98,
+        36,
+        449,
+        346
+      ],
+      "clearance_px": [
+        98,
+        36,
+        126,
+        37
+      ]
+    },
+    {
+      "frame": 12,
+      "visible_bounds_px": [
+        110,
+        33,
+        456,
+        346
+      ],
+      "clearance_px": [
+        110,
+        33,
+        119,
+        37
+      ]
+    },
+    {
+      "frame": 13,
+      "visible_bounds_px": [
+        99,
+        36,
+        457,
+        346
+      ],
+      "clearance_px": [
+        99,
+        36,
+        118,
+        37
+      ]
+    },
+    {
+      "frame": 14,
+      "visible_bounds_px": [
+        93,
+        34,
+        452,
+        347
+      ],
+      "clearance_px": [
+        93,
+        34,
+        123,
+        36
+      ]
+    },
+    {
+      "frame": 15,
+      "visible_bounds_px": [
+        85,
+        33,
+        458,
+        347
+      ],
+      "clearance_px": [
+        85,
+        33,
+        117,
+        36
+      ]
+    }
+  ]
+}

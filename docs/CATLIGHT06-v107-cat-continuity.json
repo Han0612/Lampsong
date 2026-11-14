@@ -1,0 +1,272 @@
+[
+  {
+    "key": "arch-b",
+    "oldMean": 0.0140516401546431,
+    "newMean": 0.0001068529170180617,
+    "oldMax": 0.03774098470406681,
+    "newMax": 0.00031247163217138705,
+    "worstOldFrame": 15,
+    "worstNewFrame": 15,
+    "workerP95": 28.69926499999997
+  },
+  {
+    "key": "arch",
+    "oldMean": 0.013555026998852108,
+    "newMean": 0.000104944951771031,
+    "oldMax": 0.026508175608206244,
+    "newMax": 0.0002836073665577342,
+    "worstOldFrame": 19,
+    "worstNewFrame": 19,
+    "workerP95": 27.170742000000246
+  },
+  {
+    "key": "dangle-b",
+    "oldMean": 0.0032464899540062945,
+    "newMean": 0.000026821781953522152,
+    "oldMax": 0.004850685934095861,
+    "newMax": 0.000041346110203340594,
+    "worstOldFrame": 12,
+    "worstNewFrame": 6,
+    "workerP95": 8.584586999999829
+  },
+  {
+    "key": "dangle",
+    "oldMean": 0.0034063332122972645,
+    "newMean": 0.000017223999939481966,
+    "oldMax": 0.004711399895606391,
+    "newMax": 0.0000349633487654321,
+    "worstOldFrame": 9,
+    "worstNewFrame": 9,
+    "workerP95": 19.00530000000026
+  },
+  {
+    "key": "exit-low",
+    "oldMean": 0.02020159124606632,
+    "newMean": 0.00010428013798111838,
+    "oldMax": 0.13129943094135801,
+    "newMax": 0.0002911957607116921,
+    "worstOldFrame": 6,
+    "worstNewFrame": 6,
+    "workerP95": 14.096597000000656
+  },
+  {
+    "key": "exit-sit",
+    "oldMean": 0.01851256600248124,
+    "newMean": 0.00009907464143064634,
+    "oldMax": 0.1442330332017066,
+    "newMax": 0.00033594601034858386,
+    "worstOldFrame": 6,
+    "worstNewFrame": 6,
+    "workerP95": 12.03610099999969
+  },
+  {
+    "key": "exit-upper",
+    "oldMean": 0.008042005189421447,
+    "newMean": 0.00010576472101186153,
+    "oldMax": 0.010872112155047204,
+    "newMax": 0.00017417846768336964,
+    "worstOldFrame": 13,
+    "worstNewFrame": 14,
+    "workerP95": 11.666371000000254
+  },
+  {
+    "key": "kick-b",
+    "oldMean": 0.012482755633414336,
+    "newMean": 0.00008153386740498667,
+    "oldMax": 0.09664819921023965,
+    "newMax": 0.00021509906045751633,
+    "worstOldFrame": 15,
+    "worstNewFrame": 15,
+    "workerP95": 15.925355000000309
+  },
+  {
+    "key": "kick",
+    "oldMean": 0.008339727005474555,
+    "newMean": 0.000088734931591345,
+    "oldMax": 0.01983684243373275,
+    "newMax": 0.00019587985657225853,
+    "worstOldFrame": 14,
+    "worstNewFrame": 13,
+    "workerP95": 12.86340299999938
+  },
+  {
+    "key": "land-b",
+    "oldMean": 0.013018005701384498,
+    "newMean": 0.00010093913984351209,
+    "oldMax": 0.02693567878540305,
+    "newMax": 0.00032339324618736384,
+    "worstOldFrame": 25,
+    "worstNewFrame": 15,
+    "workerP95": 10.712487000000692
+  },
+  {
+    "key": "land",
+    "oldMean": 0.01219829899178907,
+    "newMean": 0.00009352918848244194,
+    "oldMax": 0.028822848583877996,
+    "newMax": 0.0002792812726942629,
+    "worstOldFrame": 25,
+    "worstNewFrame": 27,
+    "workerP95": 11.29233099999874
+  },
+  {
+    "key": "leap-b",
+    "oldMean": 0.014845836408039917,
+    "newMean": 0.00011510017686883595,
+    "oldMax": 0.04583489356390705,
+    "newMax": 0.0003207692220406681,
+    "worstOldFrame": 15,
+    "worstNewFrame": 15,
+    "workerP95": 9.658897999999681
+  },
+  {
+    "key": "leap",
+    "oldMean": 0.014997201650971017,
+    "newMean": 0.00011979001950242464,
+    "oldMax": 0.04817637413761801,
+    "newMax": 0.0003790651098402324,
+    "worstOldFrame": 15,
+    "worstNewFrame": 15,
+    "workerP95": 10.253888999999617
+  },
+  {
+    "key": "listen-b",
+    "oldMean": 0.0025508824285887196,
+    "newMean": 0.000014571607964173325,
+    "oldMax": 0.0038478831926289036,
+    "newMax": 0.00002439633260711692,
+    "worstOldFrame": 6,
+    "worstNewFrame": 5,
+    "workerP95": 8.756674000000203
+  },
+  {
+    "key": "listen",
+    "oldMean": 0.0025434547854635684,
+    "newMean": 0.000013985339506172842,
+    "oldMax": 0.0041870205836964415,
+    "newMax": 0.00002468001089324619,
+    "worstOldFrame": 6,
+    "worstNewFrame": 11,
+    "workerP95": 11.0494290000006
+  },
+  {
+    "key": "master-b",
+    "oldMean": 0.0032618700450859355,
+    "newMean": 0.0000241315662067296,
+    "oldMax": 0.005350952591684822,
+    "newMax": 0.000054537150508351485,
+    "worstOldFrame": 9,
+    "worstNewFrame": 9,
+    "workerP95": 6.923593999999866
+  },
+  {
+    "key": "master",
+    "oldMean": 0.0035795849975792794,
+    "newMean": 0.000015569209937061245,
+    "oldMax": 0.007361593364197531,
+    "newMax": 0.000039076683914306464,
+    "worstOldFrame": 8,
+    "worstNewFrame": 8,
+    "workerP95": 8.402566000000661
+  },
+  {
+    "key": "sneak-b",
+    "oldMean": 0.007553029955440308,
+    "newMean": 0.000046476987030722116,
+    "oldMax": 0.015890522875816993,
+    "newMax": 0.00008162842683369644,
+    "worstOldFrame": 6,
+    "worstNewFrame": 7,
+    "workerP95": 8.051964000000225
+  },
+  {
+    "key": "sneak",
+    "oldMean": 0.0062284651179312315,
+    "newMean": 0.00004537002502289162,
+    "oldMax": 0.010071004675018156,
+    "newMax": 0.00007212520424836601,
+    "worstOldFrame": 15,
+    "worstNewFrame": 12,
+    "workerP95": 9.613946000001306
+  },
+  {
+    "key": "stretch-b",
+    "oldMean": 0.00423833325768579,
+    "newMean": 0.00003863225459937061,
+    "oldMax": 0.006326380378540305,
+    "newMax": 0.0000648204883805374,
+    "worstOldFrame": 8,
+    "worstNewFrame": 2,
+    "workerP95": 9.32300799999939
+  },
+  {
+    "key": "stretch",
+    "oldMean": 0.004520408761498425,
+    "newMean": 0.00004909525538610506,
+    "oldMax": 0.007701723629266521,
+    "newMax": 0.00008893314270152506,
+    "worstOldFrame": 1,
+    "worstNewFrame": 1,
+    "workerP95": 13.108978000000207
+  },
+  {
+    "key": "swat-b",
+    "oldMean": 0.006563232835572501,
+    "newMean": 0.00007091011558944563,
+    "oldMax": 0.014872188748184459,
+    "newMax": 0.00013403799019607844,
+    "worstOldFrame": 7,
+    "worstNewFrame": 8,
+    "workerP95": 15.94714500000191
+  },
+  {
+    "key": "swat",
+    "oldMean": 0.0073704535826676345,
+    "newMean": 0.00006374723886468167,
+    "oldMax": 0.030283437159586056,
+    "newMax": 0.0001787173202614379,
+    "worstOldFrame": 13,
+    "worstNewFrame": 13,
+    "workerP95": 9.72862200000236
+  },
+  {
+    "key": "tap-b",
+    "oldMean": 0.005204621875756475,
+    "newMean": 0.00003320454339143064,
+    "oldMax": 0.014707017066085694,
+    "newMax": 0.0000614163489469862,
+    "worstOldFrame": 2,
+    "worstNewFrame": 6,
+    "workerP95": 8.254906999998639
+  },
+  {
+    "key": "tap",
+    "oldMean": 0.0045971106420963454,
+    "newMean": 0.000038566062999273776,
+    "oldMax": 0.007676759940087146,
+    "newMax": 0.00008460704883805374,
+    "worstOldFrame": 9,
+    "worstNewFrame": 9,
+    "workerP95": 9.794075999998313
+  },
+  {
+    "key": "wash-b",
+    "oldMean": 0.006059188528806585,
+    "newMean": 0.000031578121217622855,
+    "oldMax": 0.012590493373275237,
+    "newMax": 0.00006021071623093682,
+    "worstOldFrame": 0,
+    "worstNewFrame": 1,
+    "workerP95": 11.05155300000115
+  },
+  {
+    "key": "wash",
+    "oldMean": 0.006276041666666666,
+    "newMean": 0.000022306569232631324,
+    "oldMax": 0.014294052401053014,
+    "newMax": 0.000040282316630355844,
+    "worstOldFrame": 2,
+    "worstNewFrame": 2,
+    "workerP95": 12.419980999999098
+  }
+]

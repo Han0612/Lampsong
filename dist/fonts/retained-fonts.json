@@ -1,0 +1,51 @@
+[
+  {
+    "key": "fz-qingyan-song",
+    "source": "FZQingYSJW-B.TTF",
+    "label": "方正轻妍宋 · 粗体",
+    "weight": 700,
+    "sha256": "147aedf2b06dec3fc9de33f651ce664f6327334b595879d82702c7fa64081b46"
+  },
+  {
+    "key": "fz-vdl-jianzhu-eb",
+    "source": "FZVDLJianZHJW-EB.TTF",
+    "label": "方正VDL建筑黑 · 特粗",
+    "weight": 800,
+    "sha256": "63c5fcf36e64a6ab152491c48ae37e5cb66b31b0468d379b597ce6753d305531"
+  },
+  {
+    "key": "fz-vdl-jianzhu-sb",
+    "source": "FZVDLJianZHJW-SB.TTF",
+    "label": "方正VDL建筑黑 · 半粗",
+    "weight": 650,
+    "sha256": "39686b004d6dbbead795a937841831aa3f04936a88c2ddd3c6749ee81284f6e0"
+  },
+  {
+    "key": "fz-da-ya-song",
+    "source": "FZDYSJW.TTF",
+    "label": "方正大雅宋",
+    "weight": 400,
+    "sha256": "7eab34eefff2c19a923c004c32bddf6ec67dcb267df3de08b2c703e1d052e1ab"
+  },
+  {
+    "key": "fz-te-ya-song",
+    "source": "FZTYSJW.TTF",
+    "label": "方正特雅宋",
+    "weight": 400,
+    "sha256": "2394c2448f82eb03981e3292a64f0fc8d4f4e63708e9787894cde2d83a3b5b80"
+  },
+  {
+    "key": "fz-fengya-song",
+    "source": "FZFYSJW.TTF",
+    "label": "方正风雅宋",
+    "weight": 400,
+    "sha256": "0ad2ed715af4fd4c538bdd8166278579d1987979b6c456bbb1c006853dc205c5"
+  },
+  {
+    "key": "fz-lanting-extra-bold",
+    "source": "方正兰亭大黑简体.TTF",
+    "label": "方正兰亭大黑",
+    "weight": 400,
+    "sha256": "06cf5ffac39dac33dee281b9415c430c8617457c5497548a20076514f2a8eed5"
+  }
+]

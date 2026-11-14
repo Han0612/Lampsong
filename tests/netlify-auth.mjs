@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {scryptSync,randomBytes} from 'node:crypto';
+import {verifyPassword} from '../netlify/auth.mjs';
+const salt=randomBytes(32),password='test-only-password';
+const record={version:1,algorithm:'scrypt',salt:salt.toString('hex'),digest:scryptSync(password,salt,32,{N:32768,r:8,p:1,maxmem:64*1024*1024}).toString('hex')};
+assert(await verifyPassword(password,record));
+assert.equal(await verifyPassword('wrong',record),false);
+assert.equal(await verifyPassword(password,null),false);
+assert.equal(await verifyPassword('a'.repeat(1025),record),false);
+assert.equal(await verifyPassword(password,{...record,digest:'00'}),false);
+console.log('PASS: salted server-only verifier accepts correct password and rejects wrong, missing, malformed and oversized inputs.');

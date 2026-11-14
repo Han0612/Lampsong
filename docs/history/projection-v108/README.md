@@ -1,0 +1,1 @@
+Archived v108 asynchronous/high-resolution projection implementation and implementation-specific tests. Not loaded, shipped or run in v109; retained only for history. Active rollback regression: tests/projection-rollback.cjs.

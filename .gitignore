@@ -1,0 +1,9 @@
+dist/client/
+dist/server/
+dist/.openai/
+.env
+.env.*
+!.env.example
+
+node_modules/
+.netlify/

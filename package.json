@@ -1,0 +1,12 @@
+{
+  "name": "catlight-console",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-console.mjs",
+    "dev": "node scripts/preview.mjs",
+    "build:netlify": "npm run build && node scripts/build-netlify.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "11.1.9"
+  }
+}

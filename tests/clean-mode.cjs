@@ -1,0 +1,12 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+let handler,hidden=false,event,click;
+const control={inert:false,getAttribute(){return null;},setAttribute(){},removeAttribute(){},contains(){return false;}};
+const lamp={getAttribute:()=>'',removeAttribute(){},setAttribute(){}};
+const box={window:{dispatchEvent(e){event=e;}},CustomEvent:class{constructor(name,args){this.type=name;this.detail=args.detail;}},document:{querySelectorAll(selector){assert(!selector.includes('pawTrigger'),'summon stays interactive');assert(!selector.includes('footer'),'copyright stays visible');return[control];},getElementById:id=>id==='lamp'?lamp:id==='immersiveToggle'?{addEventListener(_name,fn){click=fn;}}:{open:false},body:{classList:{toggle(_name,value){hidden=value;}}},activeElement:null,addEventListener(_name,fn){handler=fn;}}};
+vm.createContext(box);vm.runInContext(fs.readFileSync('dist/focus-mode.js','utf8'),box);
+const key=k=>({key:k,target:{closest(){return false;}},preventDefault(){},stopImmediatePropagation(){}});
+click();assert(hidden);handler(key('f'));assert(!hidden);handler(key('f'));assert(hidden);assert(control.inert);assert.equal(event.detail.active,true);
+handler(key('Escape'));assert(!hidden);assert(!control.inert);
+const css=fs.readFileSync('dist/style.css','utf8');assert(!css.match(/body\.scene-only :is\([^)]*#pawTrigger/));
+const app=fs.readFileSync('dist/app.js','utf8');assert(app.includes("const axisTarget=W*(document.body.classList.contains('scene-only')?.5:.64)"));
+console.log('PASS: F/Escape restore controls, summon remains available, clean mode targets screen centre.');

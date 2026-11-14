@@ -1,0 +1,13 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const html=fs.readFileSync('dist/index.html','utf8'),app=fs.readFileSync('dist/app.js','utf8'),b={};
+vm.createContext(b);vm.runInContext(fs.readFileSync('dist/defaults.js','utf8')+';this.defaults=approvedModeDefaults',b);
+for(const mode of ['pure','combined','floating'])assert(!('catIdleSleep' in b.defaults(mode).settings));
+assert(!html.includes('src="cat-sleep.js"'));assert(!html.includes('id="catIdleSleep"'));
+assert(!/CatCompanion|SleepingCat|companion\.|petAt|catTap/.test(app),'no dormant sleep runtime or activity handlers');
+assert(!/睡觉|睡眠|唤醒|打个盹/.test(html));assert(!fs.readFileSync('dist/cat-menu.js','utf8').includes('onSleep'));
+assert(fs.existsSync('dist/cat-sleep.js')&&fs.existsSync('dist/cat-sleep'),'source and artwork retained');
+assert(fs.readFileSync('dist/asset-preload.js','utf8').includes("!file.path.startsWith('cat-sleep/')"));
+const calls=[],box={rest:{on:true},paw:{select:k=>calls.push(k)}};vm.createContext(box);
+vm.runInContext(app.split('\n').find(line=>line.includes('const requestCat='))+'this.request=requestCat;',box);
+box.request('random');box.request('sneak');box.rest.on=false;box.request('random');assert.deepEqual(calls,['random','sneak']);
+console.log('PASS: no sleep scheduling, preloading, pet/wake handlers or UI; ordinary actions retained and blocked while off.');

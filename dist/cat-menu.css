@@ -1,0 +1,15 @@
+/* Keep the button hit target fixed while its complete inner disc charges. */
+#pawTrigger.cat-menu-trigger{background:none;border:0;z-index:6;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;overflow:visible}
+#pawTrigger.cat-menu-trigger:is(:hover,:focus-visible){background:none}
+.cat-trigger-disc{width:100%;height:100%;display:grid;place-items:center;border-radius:50%;box-sizing:border-box;background:rgba(255,255,255,.085);border:1px solid rgba(255,255,255,.15);color:#e7e4e0;pointer-events:none;transform-origin:center;transition:background-color .18s,color .18s}
+#pawTrigger.cat-menu-trigger:hover .cat-trigger-disc{background:rgba(255,255,255,.15);color:#fff}
+.cat-action-menu{position:fixed;inset:0;z-index:6;pointer-events:none;--cat-choice-size:52px;--cat-choice-gap:10px}
+.cat-action-menu[hidden]{display:none}
+.cat-action-grid{position:absolute;display:grid;grid-template-columns:repeat(3,var(--cat-choice-size));grid-template-rows:repeat(4,var(--cat-choice-size));gap:var(--cat-choice-gap);pointer-events:none}
+.cat-action-button{box-sizing:border-box;width:var(--cat-choice-size);height:var(--cat-choice-size);display:grid;place-items:center;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(30,32,29,.77);color:#e7e4e0;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);pointer-events:auto;touch-action:manipulation;transition:background-color .18s,border-color .18s,color .18s}
+.cat-action-button:hover,.cat-action-button:focus-visible{background:rgba(79,81,72,.8);border-color:rgba(255,255,255,.35);color:#fff}
+.cat-action-button:active{background:rgba(112,113,101,.8)}
+.cat-action-button[aria-checked=true]{background:rgba(231,228,220,.18);border-color:rgba(231,228,220,.48)}
+.cat-action-button canvas{width:84%;height:77%;display:block;pointer-events:none}
+.cat-action-menu[inert] .cat-action-button{pointer-events:none}
+@media(prefers-reduced-motion:reduce){.cat-trigger-disc,.cat-action-button{transition:none}}

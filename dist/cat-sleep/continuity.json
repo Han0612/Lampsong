@@ -1,0 +1,101 @@
+{
+  "curl": {
+    "runtimeFrames": 61,
+    "authoredFramesUsed": 11,
+    "contourDerivedFrames": 48,
+    "minimumAdjacentIoU": 0.9133,
+    "medianAdjacentIoU": 0.9617,
+    "nativeRoute": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
+    "bridgeAOverlap": [
+      0.9077,
+      0.9154,
+      0.9123,
+      0.9086,
+      0.907,
+      0.906,
+      0.9037,
+      0.9019,
+      0.8999,
+      0.9007
+    ],
+    "bridgeBOverlap": [
+      0.9182,
+      0.9232,
+      0.9194,
+      0.9172,
+      0.9147,
+      0.9135,
+      0.9109,
+      0.9098,
+      0.907,
+      0.9067
+    ],
+    "fileBytes": 451116,
+    "cellWidth": 512,
+    "cellHeight": 320,
+    "decodedBytes": 41943040,
+    "bridgeIntermediateCount": 9,
+    "measurementResolution": "640x400 contour calculation"
+  },
+  "side": {
+    "runtimeFrames": 57,
+    "authoredFramesUsed": 10,
+    "contourDerivedFrames": 45,
+    "minimumAdjacentIoU": 0.9136,
+    "medianAdjacentIoU": 0.9437,
+    "nativeRoute": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "bridgeAOverlap": [
+      0.9144,
+      0.9207,
+      0.9162,
+      0.9143,
+      0.9126,
+      0.9119,
+      0.9095,
+      0.9081,
+      0.9067,
+      0.9061
+    ],
+    "bridgeBOverlap": [
+      0.9243,
+      0.9277,
+      0.9244,
+      0.9226,
+      0.9209,
+      0.9195,
+      0.918,
+      0.9162,
+      0.9147,
+      0.9142
+    ],
+    "fileBytes": 417908,
+    "cellWidth": 512,
+    "cellHeight": 320,
+    "decodedBytes": 39321600,
+    "bridgeIntermediateCount": 9,
+    "measurementResolution": "640x400 contour calculation"
+  }
+}

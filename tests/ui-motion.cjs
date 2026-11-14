@@ -1,0 +1,11 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
+const box={matchMedia:()=>({matches:false}),getComputedStyle:el=>({opacity:el.opacity||'1',transform:'none'})};vm.createContext(box);vm.runInContext(fs.readFileSync('dist/ui-motion.js','utf8')+';this.motion=UiMotion;',box);
+const el={hidden:true,tagName:'ASIDE',attrs:{},setAttribute(k,v){this.attrs[k]=v;},animate(frames){this.frames=frames;return this.animation={cancel(){this.cancelled=true;}};}};
+box.motion.show(el,true);assert.equal(el.hidden,false);assert.equal(el.inert,false);assert(box.motion.isOpen(el));
+const enter=el.animation;el.opacity='.4';box.motion.show(el,false);const exit=el.animation;
+assert(enter.cancelled);assert.equal(el.hidden,false,'exit stays painted');assert.equal(el.inert,true,'closing cannot intercept input');assert.equal(box.motion.isOpen(el),false);
+box.motion.show(el,true);assert(exit.cancelled);assert.equal(el.frames[0].opacity,'.4','interrupted exit starts at displayed alpha');
+exit.onfinish();assert.equal(el.hidden,false,'stale exit cannot hide a reopened panel');
+el.animation.onfinish();assert.equal(el.hidden,false);
+box.motion.show(el,false);el.animation.onfinish();assert.equal(el.hidden,true);assert.equal(el.attrs['aria-hidden'],'true');
+console.log('PASS: interruptible entrance/exit, immediate input removal, no stale completion or queued transitions.');
